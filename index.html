@@ -64,7 +64,7 @@
         <div class="overlay">
           <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -125,17 +125,22 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list specialization-list">
             <li class="specialization-item">
-              <a href="#"
-                ><img src="./images/box1.jpg" width="370" alt="Разработка десктопного приложения"
-              /></a>
+              <a class="specialization-link" href="#">
+                <img src="./images/box1.jpg" width="370" alt="Разработка десктопного приложения" />
+                <p class="specialization-caption">Десктопные приложения</p></a
+              >
             </li>
             <li class="specialization-item">
-              <a href="#"
-                ><img src="./images/box2.jpg" width="370" alt="Разработка мобильного приложения"
-              /></a>
+              <a class="specialization-link" href="#">
+                <img src="./images/box2.jpg" width="370" alt="Разработка мобильного приложения" />
+                <p class="specialization-caption">Мобильные приложения</p></a
+              >
             </li>
             <li class="specialization-item">
-              <a href="#"><img src="./images/box3.jpg" width="370" alt="Разработка дизайна" /></a>
+              <a class="specialization-link" href="#">
+                <img src="./images/box3.jpg" width="370" alt="Разработка дизайна" />
+                <p class="specialization-caption">Дизайнерские решения</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -428,9 +433,9 @@
     <footer class="page-footer">
       <div class="container footer-container">
         <div class="logo-contact">
-          <a href="./index.html" class="logo"
-            ><span class="logo-accent">Web</span><span class="logo-text">Studio</span></a
-          >
+          <a href="./index.html" class="logo">
+            <span class="logo-accent">Web</span><span class="logo-text">Studio</span>
+          </a>
           <address class="footer-address" id="contacts">
             <ul class="list address-list">
               <li class="address-item">
@@ -491,5 +496,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-modal-btn" data-modal-close>
+          <svg class="close-icon" width="18" height="18" aria-label="Закрыть">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
