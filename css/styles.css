@@ -411,7 +411,8 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--inactive-link-color);
-  padding: 12px;
+  height: 44px;
+  width: 44px;
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -654,10 +655,7 @@ body {
 
 .our-social-list {
   display: flex;
-}
-
-.our-social-item:not(:last-child) {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .our-social-link {
